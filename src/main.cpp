@@ -20,9 +20,7 @@ extern "C" void _start(int argc, char* argv[])
 	// Fetch the device id
 	if (argc <= 1)
 		return;
-
 	string id = argv[1];
-	klog("ata driv %s\n", id.c_str());
 
 	// Initialise the device
 	hardware_mapping_t hmap = get_hardware_mapping(id);
